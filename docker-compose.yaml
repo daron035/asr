@@ -1,6 +1,6 @@
 services:
   api:
-    container_name: egp_service.api
+    container_name: asr.api
     build:
       context: .
       dockerfile: Dockerfile

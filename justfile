@@ -11,7 +11,7 @@ help:
 
 # Fastapi run
 run:
-  python -m src
+  just _py python -m src
 
 # Install package with dependencies
 install:
