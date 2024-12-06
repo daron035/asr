@@ -1,0 +1,14 @@
+services:
+  api:
+    container_name: egp_service.api
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./config:/app/config:ro
+    environment:
+      - CONFIG_PATH=${CONFIG_PATH:-./config/config.template.toml}
