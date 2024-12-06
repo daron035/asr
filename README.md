@@ -14,11 +14,11 @@ https://www.russianforfree.com/resources/audio_dialogues/01-01-lutshiy-drug.mp3
 git clone https://github.com/daron035/asr.git
 cd asr
 
-# запуск через докер
+# запуск через докер - вроде работает
 make up
 
-# запуск локально
-poetry init -n
+# запуск локально - работает
 make install
+source .venv/bin/activate
 make run
 ```
