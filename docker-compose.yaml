@@ -4,11 +4,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-      target: development
+      target: production
     ports:
       - "8000:8000"
     volumes:
-      - ./src:/app/src
       - ./config:/app/config:ro
     environment:
       - CONFIG_PATH=${CONFIG_PATH:-./config/config.template.toml}

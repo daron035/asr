@@ -16,6 +16,7 @@ run:
 # Install package with dependencies
 install:
 	poetry install --with dev,test,lint --no-root
+	just _py pip install vosk
 
 # Run pre-commit
 lint:
