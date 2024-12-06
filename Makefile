@@ -12,6 +12,7 @@ run:
 .PHONY: install
 install:
 	poetry install --with dev,test,lint --no-root
+	. .venv/bin/activate && pip install vosk
 
 .PHONY: lint
 lint:
